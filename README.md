@@ -8,7 +8,7 @@ Used Yolov8 (medium) from Ultralytics to detect objects in frame. Decided to det
 
 <b>Panning Camera:</b>
 The Webcam used here is Lenovo 300 FHD with 95 degree FOV. Camera panning movement is achieved by attempting to center the detected object's bounding box in the frame for every frame in which displacement of center of bounding box to center of frame is non-zero.
-<img src = C:\Users\neerz\OneDrive\Documents\MindPlace\Images\panCamera_frame.excalidraw.png>
+![Frame](https://github.com/vishalndeka/SimplePanCamera/blob/ad9b49f3fbed0cbf720d0618e3cacd0e226567d2/images/panCamera_frame.excalidraw.png)
 Moving to the right of the center line of the frame is considered +ve displacement, and -ve for the opposite side. This displacement value is added to the current angle that the servo is at, to move the camera into the desired position.
 ```Python
 # considering the servo motor was at base_angle initially:
@@ -20,7 +20,7 @@ The servo motor, an SG-90 is controlled using an Arduino Uno. For ease of use, I
 _Note_: Only horizontal displacement from center is considered as only one servo in hand now, and panning would be easier to perform owing to the form of the webcam, compared to tilting.
 
 Control Flow Diagram:
-<img src = C:\Users\neerz\OneDrive\Documents\MindPlace\Images\PanCamera_ControlFlow.png>
+![Block Diagram](https://github.com/vishalndeka/SimplePanCamera/blob/ad9b49f3fbed0cbf720d0618e3cacd0e226567d2/images/PanCamera_ControlFlow.png)
 
 
 # Further Work
